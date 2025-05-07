@@ -83,7 +83,9 @@ nav {
   transition: top 5s ease-in-out;
   top: 0;
   width: 100%;
-  background-color: var(--background-color);
+  background: transparent;
+  backdrop-filter: blur(5px);
+  background-image: linear-gradient(120deg,rgba(0, 0, 0, 0.1));
   z-index: 1000;
   padding: 20px 50px;
 }
@@ -131,7 +133,7 @@ nav {
   text-transform: uppercase;
   position: relative;
   z-index: 1000;
-  margin: 0px 0px 0px 60px;  
+  /* margin: 0px 0px 0px 60px;   */
 }
 .cta-button {
   margin-top: 20px;
@@ -325,6 +327,7 @@ section {
   }
   nav {
     padding: 25px 60px;
+    font-size: 10px;
   }
   .anime-list .hover-img {
     width: 35vw;
@@ -354,6 +357,7 @@ section {
   }
   nav {
     padding: 20px 40px;
+    font-size: 10px;
   }
   .anime-list .title {
     margin: 0 auto 40px;
@@ -370,7 +374,11 @@ section {
 /* SM Screens (max-width: 767px) */
 @media (max-width: 767px) {
   .intro h1 {
-    font-size: 50px;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .imtro p {
+    font-size: 20px;
     line-height: 50px;
   }
   h1 {
@@ -390,6 +398,11 @@ section {
   }
   nav {
     padding: 15px 20px;
+    font-size: 10px;
+  }
+  nav h1 {
+    padding: 15px 20px;
+    display: none;
   }
   .about-text{
     flex-direction: column;
@@ -473,7 +486,7 @@ section {
   min-height: 150vh;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(20, 2%);
+  grid-template-columns: repeat(20, 5%);
   grid-template-rows: repeat(30, 3%);
   justify-content: center;
   justify-items: center;
@@ -553,4 +566,15 @@ img:nth-child(8) {
 .contact-list .hover-img img {
   width: 150px;
   height: auto;
+}
+
+footer {
+  height: 5vh;
+  margin: 0 1rem;
+  top: 100%;
+  bottom: 0;
+}
+footer p {
+  text-align: center;
+  font-size: small;
 }
