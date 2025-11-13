@@ -1,1 +1,1 @@
-My Portfolio #3 hobbies and my artwork's 
+My Portfolio #3 Hobbies and my Artwork's 
